@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Sidenav() {
   return (
-    <div className='side'>
+    <div className='side '>
     <ul>
       <Link to={'/tv'}>TV</Link><br/>
       <Link to={'/speaker'}>Speaker</Link><br/>
@@ -12,7 +12,6 @@ function Sidenav() {
   </div>
   )
 }
-
 export default Sidenav
 
 

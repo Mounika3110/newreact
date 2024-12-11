@@ -1,20 +1,31 @@
 import React from 'react';
-import { productDatas } from '../Data/Product1'; 
+import { Col, Row, Card,Button  } from 'react-bootstrap';
+import {productDatas} from '../Data/Product1'
+import { Link } from 'react-router-dom';
 
 function Tv() {
   return (
-    <div>
-      <h1>TV Products</h1> 
-      <div className="tv-list">
-        {productDatas.map((product) => (
-          <div key={product.id} className="tv-item">
-            <h2>{product.brand} - {product.screensize}"</h2>
-            <p><strong>Display Type:</strong> {product.Display}</p>
-            <p><strong>Dimensions:</strong> {product.Dimensions}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    
+    <Row className="main">
+                  <Link to='/dashboard'><p>back</p></Link> 
+
+      {productDatas.map((e) => (
+        <Col key={e.id}>
+          <Card className="card">
+            <Card.Body>
+            <img src={e.image} style={{width:'200px'}} />
+              <Card.Title>{e.brand}</Card.Title>
+              <Card.Text>
+                <strong>Display:</strong> {e.Display} <br />
+                <strong>Screen Size:</strong> {e.screensize} inches <br />
+                <strong>Dimensions:</strong> {e.Dimensions}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+ 
+          </Row>
   );
 }
 
