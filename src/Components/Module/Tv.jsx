@@ -1,19 +1,23 @@
 import React from 'react';
-import { Col, Row, Card,Button  } from 'react-bootstrap';
+import { Col, Row, Card,  } from 'react-bootstrap';
 import {productDatas} from '../Data/Product1'
+import Headernav from './Headnav';
+import Sidenav from './Sidenav';
 import { Link } from 'react-router-dom';
-
 function Tv() {
   return (
-    
-    <Row className="main">
-                  <Link to='/dashboard'><p>back</p></Link> 
-
-      {productDatas.map((e) => (
-        <Col key={e.id}>
-          <Card className="card">
+    <Row>
+      <Col sm={2}>
+          <Sidenav/>
+      </Col>
+        <Col sm={10}>
+          <Headernav/>
+         <div className='tv' >
+         {productDatas.map((e) => (
+           <Col >    <Link to={`/tvdetails/${e.id}`} className="text-decoration-none">
+          <Card className="card"  >
             <Card.Body>
-            <img src={e.image} style={{width:'200px'}} />
+            <img src={e.image} style={{width:'200px', height:'150px',}}  className="text-decoration-none"/>
               <Card.Title>{e.brand}</Card.Title>
               <Card.Text>
                 <strong>Display:</strong> {e.Display} <br />
@@ -22,9 +26,11 @@ function Tv() {
               </Card.Text>
             </Card.Body>
           </Card>
+            </Link>
         </Col>
       ))}
- 
+            </div>
+                </Col>
           </Row>
   );
 }

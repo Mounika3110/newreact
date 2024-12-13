@@ -1,7 +1,7 @@
 import Lg from '../../images/LG.jpg';
 import So from '../../images/Sony.jpg';
 import Hi from '../../images/Hisense.avif'
-import Sa from '../../images/Samsung.jpg'
+import Sa from '../../images/Samsung1.jpg'
 import Tc from '../../images/tcl.jpg'
 import Mi from '../../images/Mi.jpg'
 import Ac from '../../images/Acer.jpg'
@@ -83,10 +83,25 @@ export const productDatas = [
     },
     {
         id: 10,
+        image: Lg,
+        brand: 'Lg',
+        Display: 'QLED',
+        screensize: 50,
+        Dimensions: '23.5D x 111.2W x 71.4H Centimeters',
+    },{
+        id: 11,
         image: Vu,
         brand: 'Vu',
         Display: 'QLED',
         screensize: 50,
         Dimensions: '23.5D x 111.2W x 71.4H Centimeters',
+    },
+    {
+        id: 12,
+        image: Mi,
+        brand: 'MI',
+        Display: 'Mini Led',
+        screensize: 55,
+        Dimensions: '7.6D x 123.2W x 71.1H Centimeters',
     },
 ];

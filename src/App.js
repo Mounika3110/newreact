@@ -7,6 +7,8 @@ import ForgetPassord from './Components/ForgetPassword';
 import Signup from './Components/Signup';
 import Tv from './Components/Module/Tv';
 import Headphones from './Components/Module/Headphones';
+import Speakers from './Components/Module/Speakers';
+import Tvdetails from './Components/Module/Details/Tvdetails'
 function App() {
   
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/forgetpassword" element={<ForgetPassord/>}/>
           <Route path="/tv" element={<Tv/>}/>
           <Route path="/headphone" element={<Headphones/>}/>
+          <Route path="/speakers" element={<Speakers/>}/>
+          <Route path="/tvdetails/:id" element={<Tvdetails/>}/>
         </Routes>
       </Router>
     </div>

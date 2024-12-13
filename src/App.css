@@ -49,15 +49,50 @@ gap: 10px;
 }
 .main{
   margin-top: 50%;
+  width: 100%;
 }
 .dash{
+  width: 100%;
   display: flex;
   align-items: start;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 70px;
+  gap: 5px;
+  justify-content: space-around;
 }
 .xyz{
-  height: 250px;
+  height: 280px;
   border: 1px solid black;
+  padding: 10px;
+  margin-top: 65px;
+}
+.head{
+  display: flex; 
+  border:1px solid black;
+gap: 5px;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 5px;
+}
+.qwe{
+  gap: 2px;
+  height: 170px;
+}
+.tv{
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 65px;
+  justify-content: space-around;
+}
+.phone{
+  display: flex; 
+flex-wrap: wrap;
+justify-content: space-around;
+margin-top: 65px;
+}
+.qaz{
+  height: 310px;
+  padding: 10px;
+  border: 1px solid rgb(162, 162, 162);
 }

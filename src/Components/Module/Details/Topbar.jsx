@@ -1,12 +1,11 @@
-
 import React from 'react'
 
-function Speakers() {
+function Topbar() {
   return (
     <div>
-      
+      CART
     </div>
   )
 }
 
-export default Speakers
+export default Topbar
