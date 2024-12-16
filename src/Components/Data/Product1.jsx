@@ -8,6 +8,7 @@ import Ac from '../../images/Acer.jpg'
 import To from '../../images/TOSHIBA.jpg'
 import His from '../../images/Hisense.avif'
 import Vu from '../../images/Vu.jpg'
+import MI from '../../images/MI2.jpg'
 export const productDatas = [
     {
         id: 1,
@@ -16,6 +17,8 @@ export const productDatas = [
         Display: 'LED',
         screensize: 65,
         Dimensions: '26.9D x 14.5W x 90.3H Centimeters',
+        Price : 15000
+
     },
     {
         id: 2,
@@ -24,6 +27,7 @@ export const productDatas = [
         Display: 'LED',
         screensize: 65,
         Dimensions: '7.7D x 97.1W x 57.5H Centimeters',
+        Price : 12000
     },
     {
         id: 3,
@@ -32,6 +36,7 @@ export const productDatas = [
         Display: 'Mini Led',
         screensize: 55,
         Dimensions: '7.6D x 123.2W x 71.1H Centimeters',
+        Price : 16000,
     },
     {
         id: 4,
@@ -40,6 +45,7 @@ export const productDatas = [
         Display: 'LED',
         screensize: 32,
         Dimensions: '8.6D x 72.3W x 72.3H Centimeters',
+        Price : 14000,
     },
     {
         id: 5,
@@ -48,7 +54,8 @@ export const productDatas = [
         Display: 'LED',
         screensize: 32,
         Dimensions: '18D x 71.5W x 46.5H Centimeters',
-    },
+        Price : 17000,
+},
     {
         id: 6,
         image: Mi,
@@ -56,7 +63,8 @@ export const productDatas = [
         Display: 'LED',
         screensize: 32,
         Dimensions: '19.8D x 71.6W x 48.5H Centimeters',
-    },
+        Price : 19000,
+},
     {
         id: 7,
         image: Ac,
@@ -64,7 +72,8 @@ export const productDatas = [
         Display: 'LED',
         screensize: 65,
         Dimensions: '8.1D x 89.2W x 50.9H Centimeters',
-    },
+        Price : 16000,
+},
     {
         id: 8,
         image: To,
@@ -72,7 +81,8 @@ export const productDatas = [
         Display: 'LED',
         screensize: 32,
         Dimensions: '8.3D x 72.6W x 46H Centimeters',
-    },
+        Price : 14000,
+},
     {
         id: 9,
         image: His,
@@ -80,7 +90,8 @@ export const productDatas = [
         Display: 'LED',
         screensize: 55,
         Dimensions: '8D x 111.9W x 64.9H Centimeters',
-    },
+        Price : 13000,
+},
     {
         id: 10,
         image: Lg,
@@ -88,20 +99,23 @@ export const productDatas = [
         Display: 'QLED',
         screensize: 50,
         Dimensions: '23.5D x 111.2W x 71.4H Centimeters',
-    },{
+        Price : 19000,
+},{
         id: 11,
         image: Vu,
         brand: 'Vu',
         Display: 'QLED',
         screensize: 50,
         Dimensions: '23.5D x 111.2W x 71.4H Centimeters',
-    },
+        Price : 10000,
+},
     {
         id: 12,
-        image: Mi,
+        image: MI,
         brand: 'MI',
         Display: 'Mini Led',
         screensize: 55,
         Dimensions: '7.6D x 123.2W x 71.1H Centimeters',
-    },
+        Price : 20000,
+},
 ];

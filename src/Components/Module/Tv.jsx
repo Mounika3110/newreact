@@ -22,7 +22,8 @@ function Tv() {
               <Card.Text>
                 <strong>Display:</strong> {e.Display} <br />
                 <strong>Screen Size:</strong> {e.screensize} inches <br />
-                <strong>Dimensions:</strong> {e.Dimensions}
+                <strong>Dimensions:</strong> {e.Dimensions}<br/>
+                <strong>Price:</strong> {e.Price}
               </Card.Text>
             </Card.Body>
           </Card>

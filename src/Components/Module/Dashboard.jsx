@@ -1,20 +1,22 @@
 import React from 'react';
-import { Row, Col, } from 'react-bootstrap';
+import { Row, Col, Carousel, } from 'react-bootstrap';
 import Header from '../Header';
 import { productDatas } from '../Data/Product1';
 import { product2Datas } from '../Data/Product2';
+import {product3Datas} from '../Data/Product3';
 import { Link } from 'react-router-dom';
-import { Carousel } from 'react-bootstrap';
 function Dashboard() {
   const display=productDatas.slice(0,3)
   const hphone=product2Datas.slice(0,4)
-  const hphones=product2Datas.slice(5,9)
+  const hphones=product2Datas.slice(7,11)
+  const hphoness=product2Datas.slice(1,5)
+  const speaker=product3Datas.slice(0,3)
+
   return (
-    <div>
+    <div className='background'>
       <Header />
       <Row>
         <Col sm={12}>
-        <Carousel/>
          <div className='dash'>
             {
               display.map((e)=>{
@@ -30,8 +32,8 @@ function Dashboard() {
               })
             }
             </div>
-        <Col className="text-center mt-1">
-              <Link to='/tv' className='small'>View More
+            <Col className="text-center mt-1">
+            <Link to='/tv' className='small'>View More
               </Link>
             </Col>
             <Row>
@@ -72,7 +74,7 @@ function Dashboard() {
               <h4>Min.10% off</h4>
               <div className='head'>
                 {
-                  hphone.map((h)=>{
+                  hphoness.map((h)=>{
                     return(
                       <div className="qwe">
                         <img src={h.image} style={{width:'150px' }} /><br/>
@@ -87,6 +89,27 @@ function Dashboard() {
             </Row>
             <Link to='/headphone'>View More</Link>
         </Col>
+      </Row>
+      <Row>
+        <Col sm={6}>
+        <div className='speaker'>
+            {
+              speaker.map((s)=>{
+                return(
+                  <div className=" plm">
+            <img src={s.image} style={{width:'150px'}} /><br/>
+              <strong>Brand:</strong>{s.Brand}<br/>
+                <strong>Model :</strong> {s.Model} inches <br />
+                <strong>Price:</strong> {s.Price}<br/>
+          </div>
+                )
+              })
+            }
+            </div>
+        </Col>
+        <Col sm={6}>
+        <Carousel/>
+</Col>
       </Row>
     </div>
   )

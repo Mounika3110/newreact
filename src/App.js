@@ -9,6 +9,7 @@ import Tv from './Components/Module/Tv';
 import Headphones from './Components/Module/Headphones';
 import Speakers from './Components/Module/Speakers';
 import Tvdetails from './Components/Module/Details/Tvdetails'
+import Headdetails from './Components/Module/Details/Headdetails'
 function App() {
   
   return (
@@ -20,9 +21,10 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/forgetpassword" element={<ForgetPassord/>}/>
           <Route path="/tv" element={<Tv/>}/>
-          <Route path="/headphone" element={<Headphones/>}/>
-          <Route path="/speakers" element={<Speakers/>}/>
           <Route path="/tvdetails/:id" element={<Tvdetails/>}/>
+          <Route path="/headphone" element={<Headphones/>}/>
+          <Route path="/headdetails/:id" element={<Headdetails/>}/>
+          <Route path="/speakers" element={<Speakers/>}/>
         </Routes>
       </Router>
     </div>

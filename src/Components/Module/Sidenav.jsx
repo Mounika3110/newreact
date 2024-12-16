@@ -7,7 +7,7 @@ function Sidenav() {
     <ul>
       <Link to={'/tv'}>TV</Link><br/>
       <Link to={'/headphone'}>Headphones</Link><br/>
-      <Link to={'/speaker'}>Speaker</Link><br/>
+      <Link to={'/speakers'}>Speaker</Link><br/>
     </ul>
   </div>
   )

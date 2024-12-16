@@ -1,75 +1,96 @@
+import boAT from '../../images/boATs.avif'
+import Bose from '../../images/Bose.jpg'
+import JBL from '../../images/JBLs.jpg'
+import Marshall from '../../images/Marshall.jpg'
+import Sony from '../../images/Sonys.webp'
+import Tribit from '../../images/Tribit.jpg'
+import ZEBRONICS from '../../images/ZEBRONICSs.webp'
+import PHILIPS from '../../images/PHILIPS.webp'
+import MiVi from '../../images/MiVi.webp'
+import Amazon from '../../images/Amazon.webp'
+
 export const product3Datas=[
     {
         id: 1,
+        image: boAT,
         Brand: 'boAT',
         battery : '8 hours',  
         Model : 'Stone 193 Pro',
         weight : '220 grams',
-        Prise:899
+        Price:899
     },
     {
         id: 2,
+        image: Bose,
         Brand: 'Bose',
         battery : '12 hours',  
-        Model : 'Bose SoundLink Flex Bluetooth Portable Speaker',
+        Model : 'Bose SoundLink',
         weight : '1.3 pounds',
-        Prise:10000
+        Price:10000
     },{
         id: 3,
+        image: JBL,
         Brand: 'JBL',
         battery : '5 hours',  
         Model : 'SGO 3',
         weight : '209 grams',
-        Prise:2799
+        Price:2799
     },{
         id: 4,
+        image: Marshall,
         Brand: 'Marshall',
         battery : '30 hours',  
         Model : 'Emberton II',
         weight : '118 grams',
-        Prise:11000
+        Price:11000
     },{
         id: 5,
+        image: Sony,
         Brand: 'Sony',
         battery : '12 hours',  
         Model : 'Sound bars',
         weight : '15000 grams',
-        Prise:120000
+        Price:120000
     },{
         id: 6,
-        Brand: 'realme',
+        image: Tribit,
+        Brand: 'Tribit',
         battery : '5 hours',  
         Model : 'Stone ',
         weight : '220 grams',
-        Prise:1500
+        Price:1500
     },{
         id: 7,
+        image: ZEBRONICS,
         Brand: 'ZEBRONICS',
         battery : '6 hours',  
         Model : 'ZEB-COUNTY',
         weight : '390 grams',
-        Prise:499
+        Price:499
     },{
         id: 8,
+        image: PHILIPS,
         Brand: 'PHILIPS',
         size : '4 inches',  
         Model : 'Philips Audio Mms',
         weight : '2.6 kilograms',
-        Prise:3549
+        Price:3549
     },{
         id: 9,
+        image: MiVi,
         Brand: 'MiVi',
         battery : '12 hours',  
         Model : 'Play',
         weight : '160 grams',
-        Prise:699
+        Price:699
     },
     {
         id: 10,
+        image: Amazon,
         Brand: 'Amazon',
         size : '8.1”x6.9” (206 x 175 mm) ',  
         Model : 'Echo Studio',
         weight : '3.5 kg',
-        Prise:15000
+        Price:15000
     },
   ]
