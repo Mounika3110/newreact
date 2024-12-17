@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react'
 import Sidenav from '../Sidenav'
 import Topbar from './Topbar'
-import {product3Datas} from '../../Data/Product3'
+import {product2Datas} from '../../Data/Product2'
 import { useParams } from 'react-router-dom'
 import { Row,Col } from 'react-bootstrap'
 
@@ -9,7 +9,7 @@ export const useContext= createContext()
 function Tvdetails() {
     const [cart, setCart] = useState(0)
     let {id} = useParams()
-    let product = product3Datas.find((h)=>h.id==id)
+    let product = product2Datas.find((h)=>h.id==id)
   return (
     <div>
       <Row>
