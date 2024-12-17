@@ -1,8 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-function CollapsibleExample() {
+
+function Speakersnav({ setSelectedBrand }) {
   return (
     <Navbar fixed="top" collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
@@ -10,19 +10,21 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/boAT">boAT</Nav.Link>
-            <Nav.Link href="/Bose">Bose</Nav.Link>
-            <Nav.Link href="/JBL">JBL</Nav.Link>
-            <Nav.Link href="/Marshall">Marshall</Nav.Link>
-            <Nav.Link href="/Sony">Sony</Nav.Link>
-            <Nav.Link href="/Tribit">Tribit</Nav.Link>
-            <Nav.Link href="/ZEBRONICS">ZEBRONICS</Nav.Link>
-            <Nav.Link href="/PHILIPS">PHILIPS</Nav.Link>
-            <Nav.Link href="/MiVi">MiVi</Nav.Link>
-            <Nav.Link href="/Amazon">Amazon</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('boAT')}>boAT</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Bose')}>Bose</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('JBL')}>JBL</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Marshall')}>Marshall</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Sony')}>Sony</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Tribit')}>Tribit</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('ZEBRONICS')}>ZEBRONICS</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('PHILIPS')}>PHILIPS</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('MiVi')}>MiVi</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Amazon')}>Amazon</Nav.Link>
           </Nav>
           <Nav>
-          <Link to='/dashboard'><p>Back</p></Link> 
+            <Link to='/dashboard'>
+              <p>Back</p>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -30,4 +32,4 @@ function CollapsibleExample() {
   );
 }
 
-export default CollapsibleExample;
+export default Speakersnav;

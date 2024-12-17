@@ -1,8 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-function CollapsibleExample() {
+
+function Phonenav({ setSelectedBrand }) {
   return (
     <Navbar fixed="top" collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
@@ -10,19 +10,21 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/LG">boAT</Nav.Link>
-            <Nav.Link href="/Sony">OnePlus</Nav.Link>
-            <Nav.Link href="/Hisense">JBL</Nav.Link>
-            <Nav.Link href="/Samsung">Boult</Nav.Link>
-            <Nav.Link href="/TCL">Sony</Nav.Link>
-            <Nav.Link href="/MI">realme</Nav.Link>
-            <Nav.Link href="/Acer">ZEBRONICS</Nav.Link>
-            <Nav.Link href="/Vu">Samsung</Nav.Link>
-            <Nav.Link href="/Noise">Noise</Nav.Link>
-            <Nav.Link href="/pTron">pTron</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('boAT')}>boAT</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('OnePlus')}>OnePlus</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('JBL')}>JBL</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Boult')}>Boult</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Sony')}>Sony</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('realme')}>realme</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('ZEBRONICS')}>ZEBRONICS</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Samsung')}>Samsung</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('Noise')}>Noise</Nav.Link>
+            <Nav.Link onClick={() => setSelectedBrand('pTron')}>pTron</Nav.Link>
           </Nav>
           <Nav>
-          <Link to='/dashboard'><p>Back</p></Link> 
+            <Link to='/dashboard'>
+              <p>Back</p>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -30,4 +32,4 @@ function CollapsibleExample() {
   );
 }
 
-export default CollapsibleExample;
+export default Phonenav;

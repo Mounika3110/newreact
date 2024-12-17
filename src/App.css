@@ -37,7 +37,7 @@ input{
   text-align: center;
 }
 .side{
-  height: 150vh;
+  height: 800vh;
   background-color: black;
   display: flex;
   list-style-type: none;
@@ -105,9 +105,73 @@ margin-top: 65px;
   display: flex; 
 flex-wrap: wrap;
 justify-content: space-around;
+margin-top: 75px;
 }
 .plm{
   height: fit-content;
   padding: 10px;
   background-color: white;
+}
+.xyz, .qwe, .plm {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.xyz:hover, .qwe:hover, .plm:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+small, .small {
+  transition: color 0.3s ease;
+}
+
+small:hover, .small:hover {
+  color: #007bff; 
+  cursor: pointer;
+}
+.tv {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.sidenav {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+}
+.text-decoration-none {
+  text-decoration: none;
+  color: inherit;
+}
+.headnav {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
 }
